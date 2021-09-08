@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://psql:5432/library
+    username:
+    password:
+  flyway:
+    url: ${spring.datasource.url}
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    schemas: public
